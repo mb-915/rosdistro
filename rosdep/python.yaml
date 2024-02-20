@@ -7509,6 +7509,23 @@ python3-pkg-resources:
   opensuse: [python3-setuptools]
   rhel: ['python%{python3_pkgversion}-setuptools']
   ubuntu: [python3-pkg-resources]
+python3-platformdirs:
+  alpine: [py3-platformdirs]
+  arch: [python-platformdirs]
+  debian: [python3-platformdirs]
+  fedora: [python-platformdirs]
+  gentoo: [dev-python/platformdirs]
+  nixos: [python3Packages.platformdirs]
+  opensuse:
+    '*': [python-platformdirs]
+    '15.2':
+      pip:
+        packages: [platformdirs]
+  ubuntu:
+    '*': [python3-platformdirs]
+    focal:
+      pip:
+        packages: [platformdirs]
 python3-playsound-pip:
   alpine:
     pip:
